@@ -13,7 +13,7 @@ curl_setopt_array($curl, [
 		'secret' => '6LfFYxwTAAAAALkP7btrWNo61nPl4Ia1-3nBN2vK',
 		'response' => $_POST['g-recaptcha-response'],
 
-	]
+	],
 ]);
 
 $response = json_decode(curl_exec($curl));
